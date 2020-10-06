@@ -135,7 +135,7 @@ function updateContent() {
 	}).toDataURL();
 	var html = '<table width="100%" cellspacing="0" cellpadding="0"><tr><td>';
 	
-	html += ' ' + imgData + ' />';
+	html += ' ' + imgData + ' ';
 	html += '</td></tr></table>';
 
 	var data = {
