@@ -133,11 +133,9 @@ function updateContent() {
 	var imgData = cropper.getCroppedCanvas({
 		imageSmoothingEnabled: false
 	}).toDataURL();
-	var html = '<table width="100%" cellspacing="0" cellpadding="0"><tr><td';
-	if (alignCenter) html += ' align="center"';
-	html += '><img';
-	if (fillWidth) html += ' style="width:100%;height:auto"';
-	html += ' src="' + imgData + '" />';
+	var html = '<table width="100%" cellspacing="0" cellpadding="0"><tr><td>';
+	
+	html += ' ' + imgData + ' />';
 	html += '</td></tr></table>';
 
 	var data = {
